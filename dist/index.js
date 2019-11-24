@@ -72,16 +72,15 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const core = __importStar(__webpack_require__(470));
-function run() {
-    return __awaiter(this, void 0, void 0, function* () {
-        try {
-            const dummy_input = core.getInput('dummy_input');
-        }
-        catch (error) {
-            core.setFailed(error.message);
-        }
-    });
-}
+const run = () => __awaiter(this, void 0, void 0, function* () {
+    try {
+        const dummy_input = core.getInput('dummy_input');
+        console.log(dummy_input);
+    }
+    catch (error) {
+        core.setFailed(error.message);
+    }
+});
 /* tslint:disable-next-line:no-floating-promises */
 run();
 
