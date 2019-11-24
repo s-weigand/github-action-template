@@ -74,8 +74,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const core = __importStar(__webpack_require__(470));
 const run = () => __awaiter(this, void 0, void 0, function* () {
     try {
-        const dummy_input = core.getInput('dummy_input');
-        console.log(dummy_input);
+        const dummyInput = core.getInput('dummy-input');
+        console.log(dummyInput);
     }
     catch (error) {
         core.setFailed(error.message);

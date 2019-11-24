@@ -42,4 +42,4 @@ jobs:
         run: npm run release
       - uses: ./
         with:
-          dummy_input: "bar"
+          dummy-input: "bar"

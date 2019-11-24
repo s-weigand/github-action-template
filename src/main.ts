@@ -2,8 +2,8 @@ import * as core from '@actions/core'
 
 const run = async (): Promise<void> => {
   try {
-    const dummy_input = core.getInput('dummy_input')
-    console.log(dummy_input)
+    const dummyInput = core.getInput('dummy-input')
+    console.log(dummyInput)
   } catch (error) {
     core.setFailed(error.message)
   }
