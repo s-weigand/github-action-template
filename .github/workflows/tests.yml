@@ -18,8 +18,10 @@ jobs:
       - name: Test Build
         run: npm run test_build
       - name: Checking format
+        if: matrix.os == 'ubuntu-latest'
         run: npm run format-check
       - name: Linting code
+        if: matrix.os == 'ubuntu-latest'
         run: npm run lint
       - name: Running jest tests
         run: npm test
