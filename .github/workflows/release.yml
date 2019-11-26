@@ -22,4 +22,4 @@ jobs:
           TEST_TAG_PREFIX: test/
           ORIGINAL_TAG_PREFIX: original/
           CREATE_MINOR_VERSION_TAG: false
-          # CLEAN_TARGETS: '.[!.]*,__tests__,src,*.js,*.ts,*.json,*.lock,_config.yml'
+          CLEAN_TARGETS: .[!.]*,__tests__,src,*.js,*.ts,*.json,*.lock,_config.yml,node_modules
