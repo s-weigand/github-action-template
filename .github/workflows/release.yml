@@ -16,10 +16,11 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BUILD_COMMAND: npm run release
-          COMMIT_NAME: Sebastian Weigand
+          COMMIT_NAME: s-weigand
           COMMIT_EMAIL: s.weigand.pyh@gmail.com
+          BRANCH_NAME: release
           OUTPUT_BUILD_INFO_FILENAME: build.json
           TEST_TAG_PREFIX: test/
           ORIGINAL_TAG_PREFIX: original/
           CREATE_MINOR_VERSION_TAG: false
-          CLEAN_TARGETS: '.[!.]*,__tests__,src,*.js,*.ts,*.json,*.lock,_config.yml,node_modules'
+          CLEAN_TARGETS: 'node_modules,.[!.]*,__tests__,src,*.js,*.ts,*.json,*.lock,_config.yml'
