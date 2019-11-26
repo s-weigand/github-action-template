@@ -15,7 +15,6 @@ jobs:
         uses: technote-space/release-github-actions@v1
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BUILD_COMMAND: npm run release
           COMMIT_NAME: s-weigand
           COMMIT_EMAIL: s.weigand.pyh@gmail.com
           BRANCH_NAME: release
