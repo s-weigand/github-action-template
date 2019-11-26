@@ -1,0 +1,16 @@
+name: "action-template"
+description: "Setup conda to use in later actions"
+author: "Sebastian Weigand"
+inputs:
+  dummy-input:
+    description: "some input"
+    required: false
+    default: "foo"
+
+runs:
+  using: "node12"
+  main: "dist/index.js"
+
+branding:
+  icon: "code"
+  color: "yellow"

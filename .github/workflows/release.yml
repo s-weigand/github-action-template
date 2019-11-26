@@ -1,0 +1,26 @@
+name: Release
+on:
+  release:
+    types: [published]
+
+jobs:
+  release:
+    name: Release GitHub Actions
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+
+      - name: Release GitHub Actions
+        uses: technote-space/release-github-actions@v1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BUILD_COMMAND: npm run release
+          COMMIT_NAME: s-weigand
+          COMMIT_EMAIL: s.weigand.pyh@gmail.com
+          BRANCH_NAME: release
+          OUTPUT_BUILD_INFO_FILENAME: build.json
+          TEST_TAG_PREFIX: test/
+          ORIGINAL_TAG_PREFIX: original/
+          CREATE_MINOR_VERSION_TAG: false
+          CLEAN_TARGETS: 'node_modules,.[!.]*,__tests__,src,*.js,*.ts,*.json,*.lock,_config.yml'
