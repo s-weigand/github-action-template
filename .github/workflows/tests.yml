@@ -9,6 +9,10 @@ jobs:
         os: [ubuntu-latest, windows-latest, macOS-latest]
     steps:
       - uses: actions/checkout@v1
+      - name: Setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
       - name: Install Dependencies
         run: npm ci
       - name: Test Build
@@ -30,6 +34,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
+      - name: Setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
       - name: Install Dependencies
         run: npm ci
       - name: Create fresh build release  compare file
