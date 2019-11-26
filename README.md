@@ -1,6 +1,7 @@
 # Github action template
 
 [![Actions Status](https://github.com/s-weigand/github-action-template/workflows/Tests/badge.svg)](https://github.com/s-weigand/github-action-template/actions)
+[![codecov](https://codecov.io/gh/s-weigand/github-action-template/branch/master/graph/badge.svg)](https://codecov.io/gh/s-weigand/github-action-template)
 
 My template repo for typescript based github actions
 

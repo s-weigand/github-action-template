@@ -1,4 +1,4 @@
-import * as core from '@actions/core'
+import { loadConfig } from '../src/load-config'
 
 const testEnvVars = {
   INPUT_DUMMY_INPUT: 'foo'
@@ -18,7 +18,7 @@ describe('Reading of the config', () => {
   })
 
   it('test config values', () => {
-    const branch = core.getInput('dummy_input')
-    expect(branch).toEqual('foo')
+    const config = loadConfig()
+    expect(config).toEqual({ dummy_input: 'foo' })
   })
 })
