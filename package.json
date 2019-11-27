@@ -7,8 +7,8 @@
   "scripts": {
     "test_build": "tsc",
     "watch_test_build": "tsc -w",
-    "build": "ncc build src/main.ts -o dist",
-    "build-compare-file": "ncc build src/main.ts -o compare",
+    "build": "ncc build src/index.ts -o dist",
+    "build-compare-file": "ncc build src/index.ts -o compare",
     "format": "prettier --write **/*.ts",
     "format-check": "prettier --check **/*.ts",
     "lint": "tslint src/*",

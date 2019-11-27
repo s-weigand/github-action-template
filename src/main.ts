@@ -1,13 +1,11 @@
 import * as core from '@actions/core'
+import { loadConfig } from './load-config'
 
-const run = async (): Promise<void> => {
+export const run = async (): Promise<void> => {
   try {
-    const dummyInput = core.getInput('dummy-input')
-    console.log(dummyInput)
+    const config = loadConfig()
+    console.log(config)
   } catch (error) {
     core.setFailed(error.message)
   }
 }
-
-/* tslint:disable-next-line:no-floating-promises */
-run()
