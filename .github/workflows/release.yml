@@ -22,3 +22,14 @@ jobs:
           ORIGINAL_TAG_PREFIX: original/
           CREATE_MINOR_VERSION_TAG: false
           CLEAN_TARGETS: .[!.]*,__tests__,src,*.js,*.ts,*.json,*.lock,_config.yml,CODE_OF_CONDUCT.md,node_modules
+
+  test-integration:
+    runs-on: ${{ matrix.os }}
+    needs: [release]
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macOS-latest]
+    steps:
+      - uses: s-weigand/github-action-template@v1
+        with:
+          dummy-input: bar

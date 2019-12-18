@@ -5,6 +5,6 @@ export interface Config {
 }
 
 export const loadConfig = (): Config => {
-  const dummy_input = core.getInput('dummy_input')
+  const dummy_input = core.getInput('dummy-input')
   return { dummy_input }
 }

@@ -1,7 +1,7 @@
 import { loadConfig } from '../src/load-config'
 
 const testEnvVars = {
-  INPUT_DUMMY_INPUT: 'foo'
+  'INPUT_DUMMY-INPUT': 'foo'
 }
 
 describe('Reading of the config', () => {

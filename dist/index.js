@@ -310,7 +310,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const core = __importStar(__webpack_require__(470));
 exports.loadConfig = () => {
-    const dummy_input = core.getInput('dummy_input');
+    const dummy_input = core.getInput('dummy-input');
     return { dummy_input };
 };
 
