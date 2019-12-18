@@ -34,7 +34,7 @@ module.exports =
 /******/ 	// the startup function
 /******/ 	function startup() {
 /******/ 		// Load entry module and return exports
-/******/ 		return __webpack_require__(131);
+/******/ 		return __webpack_require__(325);
 /******/ 	};
 /******/
 /******/ 	// run startup
@@ -72,17 +72,29 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const core = __importStar(__webpack_require__(470));
-const run = () => __awaiter(this, void 0, void 0, function* () {
+const load_config_1 = __webpack_require__(477);
+exports.run = () => __awaiter(this, void 0, void 0, function* () {
     try {
-        const dummyInput = core.getInput('dummy-input');
-        console.log(dummyInput);
+        const config = load_config_1.loadConfig();
+        console.log(config);
     }
     catch (error) {
         core.setFailed(error.message);
     }
 });
+
+
+/***/ }),
+
+/***/ 325:
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+const main_1 = __webpack_require__(131);
 /* tslint:disable-next-line:no-floating-promises */
-run();
+main_1.run();
 
 
 /***/ }),
@@ -280,6 +292,28 @@ function warning(message) {
 }
 exports.warning = warning;
 //# sourceMappingURL=core.js.map
+
+/***/ }),
+
+/***/ 477:
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
+
+"use strict";
+
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const core = __importStar(__webpack_require__(470));
+exports.loadConfig = () => {
+    const dummy_input = core.getInput('dummy_input');
+    return { dummy_input };
+};
+
 
 /***/ }),
 
