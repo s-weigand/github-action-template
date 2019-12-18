@@ -15,7 +15,6 @@ jobs:
         uses: technote-space/release-github-actions@v2
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          COMMIT_NAME: s-weigand
           COMMIT_EMAIL: s.weigand.pyh@gmail.com
           BRANCH_NAME: release
           OUTPUT_BUILD_INFO_FILENAME: build.json
