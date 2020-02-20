@@ -38,6 +38,8 @@
   },
   "devDependencies": {
     "@types/jest": "^25.1.2",
+    "@types/yargs": "15.0.1",
+    "yargs": "15.0.1",
     "@types/node": "^13.7.1",
     "@types/temp": "^0.8.34",
     "@zeit/ncc": "^0.21.1",

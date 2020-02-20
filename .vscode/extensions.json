@@ -17,12 +17,13 @@
     "igorsbitnev.error-gutters",
     "ryanluker.vscode-coverage-gutters",
     "visualstudioexptteam.vscodeintellicode",
+    "rssowl.copy-relative-path-posix",
     // Multi lingual spallchecker
     "streetsidesoftware.code-spell-checker",
     // doc generation mainly
     "lextudio.restructuredtext",
     // sass, scss
-    "thibaudcolas.stylelint",
+    "stylelint.vscode-stylelint",
     "mrmlnc.vscode-scss",
     "syler.sass-indented",
     "pranaygp.vscode-css-peek",
