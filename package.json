@@ -39,7 +39,7 @@
   "devDependencies": {
     "@types/jest": "^25.1.4",
     "@types/yargs": "15.0.4",
-    "yargs": "15.1.0",
+    "yargs": "15.3.0",
     "@types/node": "^13.9.0",
     "@types/temp": "^0.8.34",
     "@zeit/ncc": "^0.21.1",
