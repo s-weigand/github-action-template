@@ -42,7 +42,7 @@
     "yargs": "15.3.1",
     "@types/node": "^13.9.3",
     "@types/temp": "^0.8.34",
-    "@zeit/ncc": "^0.21.1",
+    "@zeit/ncc": "^0.22.0",
     "jest": "^25.1.0",
     "jest-circus": "^25.1.0",
     "prettier": "^1.19.1",
