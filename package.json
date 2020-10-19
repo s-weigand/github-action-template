@@ -40,7 +40,7 @@
     "@types/jest": "^26.0.14",
     "@types/yargs": "15.0.9",
     "yargs": "16.1.0",
-    "@types/node": "^14.11.8",
+    "@types/node": "^14.11.10",
     "@types/temp": "^0.8.34",
     "@zeit/ncc": "^0.22.3",
     "jest": "^25.5.4",
