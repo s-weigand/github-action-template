@@ -38,7 +38,7 @@
   },
   "devDependencies": {
     "@types/jest": "^26.0.16",
-    "@types/yargs": "15.0.10",
+    "@types/yargs": "15.0.11",
     "yargs": "16.2.0",
     "@types/node": "^14.14.10",
     "@types/temp": "^0.8.34",
