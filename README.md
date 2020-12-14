@@ -1,11 +1,11 @@
 # Github action template
 
 [![Actions Status](https://github.com/s-weigand/github-action-template/workflows/Tests/badge.svg)](https://github.com/s-weigand/github-action-template/actions)
-[![codecov](https://codecov.io/gh/s-weigand/github-action-template/branch/master/graph/badge.svg)](https://codecov.io/gh/s-weigand/github-action-template)
+[![codecov](https://codecov.io/gh/s-weigand/github-action-template/branch/main/graph/badge.svg)](https://codecov.io/gh/s-weigand/github-action-template)
 
 My template for typescript based github actions and also my testing repo for new workflows I want to use with them.
 
-For the template `master` is the dev branch and `stable` is the default branch to use.
+For the template `main` is the dev branch and `stable` is the default branch to use.
 The releases of this template can be ignored, since they are for testing only.
 
 ## Inputs
