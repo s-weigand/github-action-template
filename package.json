@@ -45,7 +45,7 @@
     "jest": "^27.0.6",
     "jest-circus": "^27.0.4",
     "prettier": "^2.3.2",
-    "ts-jest": "^27.0.3",
+    "ts-jest": "^27.0.5",
     "tslint": "^5.20.1",
     "tslint-config-prettier": "^1.18.0",
     "tslint-config-standard": "^9.0.0",
