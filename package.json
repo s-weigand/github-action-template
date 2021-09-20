@@ -43,7 +43,7 @@
     "@types/yargs": "17.0.2",
     "@zeit/ncc": "^0.22.3",
     "jest": "^27.1.0",
-    "jest-circus": "^27.1.0",
+    "jest-circus": "^27.2.0",
     "prettier": "^2.3.2",
     "ts-jest": "^27.0.5",
     "tslint": "^6.1.3",
