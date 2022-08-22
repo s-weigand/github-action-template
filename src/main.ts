@@ -5,7 +5,7 @@ export const run = async (): Promise<void> => {
   try {
     const config = loadConfig()
     console.log(config)
-  } catch (error) {
+  } catch (error: any) {
     core.setFailed(error.message)
   }
 }
