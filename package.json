@@ -41,7 +41,7 @@
     "@types/jest": "^28.1.7",
     "@types/node": "^16.11.52",
     "@types/temp": "^0.9.1",
-    "@types/yargs": "17.0.11",
+    "@types/yargs": "17.0.13",
     "jest": "^28.1.3",
     "jest-circus": "^28.1.3",
     "prettier": "^2.7.1",
